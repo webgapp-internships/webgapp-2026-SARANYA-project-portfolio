@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+body{
+    font-family:Arial;
+    background-color:white;
+    margin:10px;
+}
+
+h1{
+    color:darkblue;
+    text-align:center;
+}
+
+.btn-container{
+    display:flex;
+    justify-content:center;
+    
+}
+
+button{
+    background-color:blue;
+    color:white;
+    border-radius:5px;
+    top:10px;
+    cursor:pointer;
+}
+
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.card{
+    color:white;
+    padding:15px;
+    border-radius:8px;
+}
+
+.blue{
+    background-color:blue;
+}
+
+.green{
+    background-color:green;
+}
+
+.red{
+    background-color:red;
+}
+
+.orange{
+    background-color:orange;
+}
+
+.large-cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.purple{
+    background-color:purple;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+}
+
+.black{
+    background-color:black;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+}
+
+
+.bottom-section{
+    display:flex;
+    gap:15px;
+}
+
+.box{
+    flex:1;
+    background-color:white;
+    padding:15px;
+    border:1px solid gray;
+    border-radius:8px;
+}
+@media screen and (max-width: 768px) {
+
+    body{
+        background-color: black ;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="btn-container">
+    <button>Export Report</button>
+</div>
+
+<h1>Employee Attendance Dashboard</h1>
+
+
+
+<div class="card-container">
+
+    <div class="card blue">
+        <h3>Total Employees</h3>
+        <h2>230</h2>
+     <i class="fa-solid fa-user"></i>
+    </div>
+
+    <div class="card green">
+        <h3>Present Today</h3>
+        <h2>1</h2>
+        <i class="fa-solid fa-globe"></i>
+    </div>
+
+    <div class="card red">
+        <h3>Absent Today</h3>
+        <h2>1</h2>
+        <i class="fa-brands fa-slack"></i>
+    </div>
+
+    <div class="card orange">
+        <h3>Active Projects</h3>
+        <h2>18</h2>
+        <i class="fa-brands fa-reddit"></i>
+    </div>
+
+</div>
+
+
+<div class="large-cards">
+
+    <div class="purple">
+        <h3>Violations Today</h3>
+        <h2>12</h2>
+    </div>
+
+    <div class="black">
+        <h3>Tasks Due Today</h3>
+        <h2>34</h2>
+    </div>
+
+</div>
+
+<div class="bottom-section">
+
+    <div class="box">
+
+        <h2>Recent Check-ins Feed</h2>
+
+        <p><b>Saranya</b> checked in at 9 a.m.</p>
+        <hr>
+
+        <p><b>Bhava Dharinin</b> checked in at 9 a.m.</p>
+        <hr>
+
+        <p><b>Swetha</b> checked in at 9 a.m.</p>
+        <hr>
+
+        <p><b>Prema Devi</b> checked in at 9 a.m.</p>
+
+    </div>
+
+    <div class="box">
+
+        <h2 style="color:red;">Violation Alerts</h2>
+
+        <p><b>Max</b> late check-in detected.</p>
+        <hr>
+
+        <p><b>Bruto</b> geo-fence violation.</p>
+        <hr>
+
+        <p><b>Bruno</b> missing check-out.</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
